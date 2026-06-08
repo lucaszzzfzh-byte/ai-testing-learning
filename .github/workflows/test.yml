@@ -15,7 +15,7 @@ jobs:
           python-version: '3.13'
 
       - name: 安装依赖
-        run: pip install requests pytest
+        run: pip install requests pytest pytest-html
 
       - name: 执行测试
         run: pytest test_api.py -v --html=report.html --self-contained-html
